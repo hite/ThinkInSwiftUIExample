@@ -9,22 +9,47 @@
 import SwiftUI
 
 class CssStyle {
-    var style: Dictionary<String, Any>
+    fileprivate var style: Dictionary<String, Any>
+    
+    let foregroundColor: Color?
     
     init(_ style: Dictionary<String, Any>) {
         self.style = style
+        if let color = style["color"] as? String {
+            switch color {
+            case ".red":
+                self.foregroundColor = .red
+                
+            case ".gray":
+                self.foregroundColor = .gray
+                
+            default:
+                self.foregroundColor = Color.black
+            }
+        } else {
+            self.foregroundColor = Color.black
+        }
     }
 }
 
 extension View {
     func setStyle(_ style: Dictionary<String, Any>) -> some View {
-        // 省略
-        return self
+        let cssStyleObj = CssStyle(style)
+        guard let color = cssStyleObj.foregroundColor else {
+            return self.foregroundColor(Color.red)
+        }
+        
+        return self.foregroundColor(color)
     }
     
     func addClass(_ clsName: CssStyle...) -> some View {
-        // 省略
-        return self
+        if let cssStyleObj = clsName.first {
+            if let color = cssStyleObj.foregroundColor {
+                return self.foregroundColor(color)
+            }
+        }
+
+        return self.foregroundColor(.black)
     }
     
     func changeClass(clsName: CssStyle) -> some View {
@@ -48,7 +73,7 @@ struct Demo_3_2_g_css_dsl: View {
     ])
     
     var body: some View {
-        ZStack() {
+        VStack() {
             Text("我是标题")
                 .setStyle(title_clsName)
             

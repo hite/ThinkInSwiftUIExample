@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Demo_3_2_e_ViewModifier()
+        Demo_3_2_g_css_dsl()
     }
 }
 
