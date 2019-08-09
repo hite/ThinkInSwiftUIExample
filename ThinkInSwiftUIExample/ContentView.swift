@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Demo_3_2_g_css_dsl()
+
     }
 }
 
@@ -18,6 +19,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+//            .frame(width: 50, height: 50)
     }
 }
 #endif
