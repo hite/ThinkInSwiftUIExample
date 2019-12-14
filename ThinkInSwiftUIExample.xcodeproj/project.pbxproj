@@ -16,6 +16,7 @@
 		4808C6DA22F7C962000F1FC9 /* 3-2_primary_component .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4808C6D922F7C962000F1FC9 /* 3-2_primary_component .swift */; };
 		4808C6DC22F7CEE2000F1FC9 /* 3-2_d_ViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4808C6DB22F7CEE2000F1FC9 /* 3-2_d_ViewContent.swift */; };
 		4808C6DE22F7D7DE000F1FC9 /* 3-2_e_ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4808C6DD22F7D7DE000F1FC9 /* 3-2_e_ViewModifier.swift */; };
+		48122EF723A53B8400778BCC /* FindDefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48122EF623A53B8400778BCC /* FindDefaultValues.swift */; };
 		48C98C2522F9137000EF0B27 /* 3-2_g_css_dsl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C98C2422F9137000EF0B27 /* 3-2_g_css_dsl.swift */; };
 		48FEDE9C22F88F5600993783 /* 3-2_f_design_system.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEDE9B22F88F5600993783 /* 3-2_f_design_system.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		4808C6D922F7C962000F1FC9 /* 3-2_primary_component .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-2_primary_component .swift"; sourceTree = "<group>"; };
 		4808C6DB22F7CEE2000F1FC9 /* 3-2_d_ViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-2_d_ViewContent.swift"; sourceTree = "<group>"; };
 		4808C6DD22F7D7DE000F1FC9 /* 3-2_e_ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-2_e_ViewModifier.swift"; sourceTree = "<group>"; };
+		48122EF623A53B8400778BCC /* FindDefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDefaultValues.swift; sourceTree = "<group>"; };
 		48C98C2422F9137000EF0B27 /* 3-2_g_css_dsl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-2_g_css_dsl.swift"; sourceTree = "<group>"; };
 		48FEDE9B22F88F5600993783 /* 3-2_f_design_system.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-2_f_design_system.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 		4808C6C222F72616000F1FC9 /* ThinkInSwiftUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				48122EF523A53B5700778BCC /* Charter-suffix_1 */,
 				4808C6D822F7C855000F1FC9 /* Chapter-3 */,
 				4808C6C322F72616000F1FC9 /* AppDelegate.swift */,
 				4808C6C522F72616000F1FC9 /* SceneDelegate.swift */,
@@ -96,6 +99,14 @@
 				48C98C2422F9137000EF0B27 /* 3-2_g_css_dsl.swift */,
 			);
 			path = "Chapter-3";
+			sourceTree = "<group>";
+		};
+		48122EF523A53B5700778BCC /* Charter-suffix_1 */ = {
+			isa = PBXGroup;
+			children = (
+				48122EF623A53B8400778BCC /* FindDefaultValues.swift */,
+			);
+			path = "Charter-suffix_1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				4808C6DE22F7D7DE000F1FC9 /* 3-2_e_ViewModifier.swift in Sources */,
 				4808C6C622F72616000F1FC9 /* SceneDelegate.swift in Sources */,
 				4808C6DA22F7C962000F1FC9 /* 3-2_primary_component .swift in Sources */,
+				48122EF723A53B8400778BCC /* FindDefaultValues.swift in Sources */,
 				4808C6C822F72616000F1FC9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
